@@ -168,7 +168,7 @@ with tab1:
 # Plot untuk Frequency
 with tab2:
     fig, ax = plt.subplots(figsize=(8, 5))
-    sns.barplot(y=top_monetary['customer_id'].astype(str), x=top_monetary['monetary'], hue=top_monetary['customer_id'].astype(str), palette='Oranges', legend=False, ax=ax)
+    sns.barplot(y=top_frequency['customer_id'].astype(str), x=top_frequency['frequency'], hue=top_frequency['customer_id'].astype(str), palette='Greens', legend=False, ax=ax)
     ax.set_title('Top 5 Customers by Frequency')
     st.pyplot(fig)
 
